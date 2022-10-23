@@ -1,0 +1,14 @@
+{
+  "background_color": "#22c9b5",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/粤核酸.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "粤核酸",
+  "short_name": "粤核酸",
+  "start_url": "index.html"
+}
