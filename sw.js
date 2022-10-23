@@ -10,9 +10,19 @@ self.addEventListener('install', (e) => {
   );
 });
 
-self.addEventListener('fetch', (e) => {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.match(e.request).then((response) => response || fetch(e.request)),
-  );
+// https://developer.chrome.com/docs/workbox/caching-strategies-overview/
+self.addEventListener('fetch', (event) => {
+  // Is this one of our precached assets?
+  const url = new URL(event.request.url);
+  const isPrecachedRequest = precachedAssets.includes(url.pathname);
+
+  if (isPrecachedRequest) {
+    // Grab the precached asset from the cache
+    event.respondWith(caches.open(cacheName).then((cache) => {
+      return cache.match(event.request.url);
+    }));
+  } else {
+    // Go to the network
+    return;
+  }
 });
