@@ -2,7 +2,7 @@
 
 （可用于核酸码）
 
-从 MDN 的 [A2HS 示例]([pwa-examples/a2hs at master · mdn/pwa-examples · GitHub](https://github.com/mdn/pwa-examples/tree/master/a2hs))改造而来，诉求是可以快速调出核酸码（大部分核酸码支持截图使用）。
+从 MDN 的 A2HS 示例（[pwa-examples/a2hs at master · mdn/pwa-examples · GitHub](https://github.com/mdn/pwa-examples/tree/master/a2hs)）改造而来，诉求是可以快速调出核酸码（大部分核酸码支持截图使用）。
 
 核酸码使用方法如下，如果需要展示其他的图片可以对应修改 `manifest.webmanifest`、`index.html`、`sw.js` 等文件的相关内容。
 
@@ -32,6 +32,6 @@
 
 5. 退出应用，关闭网络，重新打开应用测试是否可以离线工作。
 
-手机端的操作可以参考本视频：[videos/demo.mp4](videos/demo.mp4)
+手机端的操作可以参考本视频：[videos/demo.mp4](https://chenyuheng.github.io/PWA-pic/videos/demo.mp4)
 
 
